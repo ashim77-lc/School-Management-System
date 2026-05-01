@@ -2,8 +2,7 @@
 
 A full-stack web application built with Python Flask, SQLite and Bootstrap.
 
-## Live Demo
-🌐 ashimdev.pythonanywhere.com
+
 
 ## Features
 - Add students with up to 6 subjects
