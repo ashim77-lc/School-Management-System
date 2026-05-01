@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h1 class="mb-4">📋 {{ student["name"] }}'s Report</h1>
+
+  
+    <div class="card p-4 mb-4">
+        <h4>Subject Marks</h4>
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for subject in subjects %}
+                
+                <tr>
+                    <td>{{ subject["name"] }}</td>
+                    <td>{{ subject["marks"] }}</td>
+                    <td>{{ subject["grade"] }}</td>
+                    <td>{{ subject["gpa"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+  
+    <div class="card p-4 mb-4">
+        <h4>Overall Performance</h4>
+        <table class="table table-bordered">
+            <tr>
+                <th>Percentage</th>
+                <td>{{ percentage }}%</td>
+            </tr>
+            <tr>
+                <th>Overall Grade</th>
+                <td>{{ overall_grade }}</td>
+            </tr>
+            <tr>
+                <th>Overall GPA</th>
+                <td>{{ overall_gpa }} / 4.0</td>
+            </tr>
+        </table>
+    </div>
+
+    <a href="/" class="btn btn-secondary">Back to Home</a>
+</body>
+</html>
