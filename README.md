@@ -1,8 +1,8 @@
 # School Management System
 
 A full-stack web application built with Python Flask, SQLite and Bootstrap.
-live at - https://ashimdev.pythonanywhere.com/
-
+live at - [https://ashimdev.pythonanywhere.com/
+](https://ashimdev.pythonanywhere.com/)
 
 ## Features
 - Add students with up to 6 subjects
